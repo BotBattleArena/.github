@@ -1,0 +1,44 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="arenaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="botBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="botRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Arena Background (Hexagon) -->
+  <path d="M256 40 L446 148 L446 364 L256 472 L66 364 L66 148 Z" fill="url(#arenaGradient)" stroke="#8a8aff" stroke-width="8" stroke-linejoin="round" />
+  
+  <!-- Grid Lines for extra tech feel -->
+  <path d="M66 148 L446 148 M66 364 L446 364 M256 40 L256 472" stroke="rgba(138,138,255,0.1)" stroke-width="2" />
+
+  <!-- Central "Arena Floor" highlight -->
+  <circle cx="256" cy="256" r="120" fill="none" stroke="rgba(138,138,255,0.2)" stroke-width="4" stroke-dasharray="20,10" />
+
+  <!-- Bot 1 (Blue) -->
+  <g transform="translate(140, 256) rotate(-30)">
+    <path d="M-40 -30 L40 0 L-40 30 Z" fill="url(#botBlue)" filter="url(#glow)" />
+    <circle cx="-25" cy="0" r="8" fill="#fff" opacity="0.8" />
+  </g>
+
+  <!-- Bot 2 (Red) -->
+  <g transform="translate(372, 256) rotate(150)">
+    <path d="M-40 -30 L40 0 L-40 30 Z" fill="url(#botRed)" filter="url(#glow)" />
+    <circle cx="-25" cy="0" r="8" fill="#fff" opacity="0.8" />
+  </g>
+
+  <!-- Collision Spark in the middle -->
+  <path d="M256 220 L270 256 L306 270 L270 284 L256 320 L242 284 L206 270 L242 256 Z" fill="#ffd700" filter="url(#glow)" />
+</svg>
