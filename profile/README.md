@@ -1,7 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/BotBattleArena/.github/main/logo.svg" width="120" height="120" alt="Bot Battle Arena Logo">
-  <h1>Bot Battle Arena</h1>
-  <p>A development platform for autonomous bot competition.</p>
+  <h3>A development platform for autonomous bot competition.</h3>
 </div>
 
 ### 🛡️ About
