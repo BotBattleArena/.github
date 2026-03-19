@@ -1,7 +1,3 @@
-<div align="center">
-  <h3>A development platform for autonomous bot competition.</h3>
-</div>
-
 ### 🛡️ About
 Bot Battle Arena provides a standardized environment for testing and competing with autonomous agents. Our infrastructure handles game logic and real-time visualization, allowing developers to focus entirely on the decision-making logic of their bots.
 
