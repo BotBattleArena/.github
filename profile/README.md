@@ -4,8 +4,6 @@
   <p>A development platform for autonomous bot competition.</p>
 </div>
 
----
-
 ### 🛡️ About
 Bot Battle Arena provides a standardized environment for testing and competing with autonomous agents. Our infrastructure handles game logic and real-time visualization, allowing developers to focus entirely on the decision-making logic of their bots.
 
@@ -20,4 +18,3 @@ We follow a decentralized development workflow:
 - [**ArenaFramework**](https://github.com/BotBattleArena/ArenaFramework): The core engine that manages tick loops and bot communication.
 - [**Topdown-Shooter**](https://github.com/BotBattleArena/Topdown-Shooter): A reference game implementation utilizing the framework.
 - [**Bot-Template**](https://github.com/BotBattleArena/Bot-Template): A boilerplate project for creating new bots in any language.
-
